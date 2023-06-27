@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>strona</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+		padding-top: 50px
+      }
+     
+	  
+	  .column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+  height: 150px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-red w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">O PROJEKCIE</a>
+        <a href="#sklad" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SKŁAD</a>
+        <a href="#harmonogram" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HARMONOGRAM</a>
+		<a href="#link" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LINK DO REPOZYTORIUM</a>
+      </div>
+    </div>
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top: 46px">
+      <a href="#sklad" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">SKŁAD</a>
+      <a href="#harmonogram" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">HARMONOGRAM</a>
+	  <a href="#link" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">LINK DO REPOZYTORIUM</a>
+    </div>
+    <div class="w3-container w3-content w3-center w3-padding-32" style="max-width: 800px">
+      <h2 class="w3-wide">O PROJEKCIE</h2>
+      <p class="w3-justify w3-xlarge w3-center">
+        Celem projektu jest stworzenie bota przeszukującego komentarze na youtubie, aby znaleźć konta biorące udział w kampaniach fishingowych. Zbanowania ich i usunięcia komentarzy.
+      </p>
+    </div>
+    <div class="w3-content">
+      <div class="w3-container w3-content w3-center w3-padding-32" style="max-width: 800px" id="sklad">
+        <h2 class="w3-wide">SKŁAD ZESPOŁU</h2>
+
+         <div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Mateusz Durajewski</h2>
+        <p class="title">Opiekun zespołu</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Karol <br> Brzeziński</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Olaf<br>Grabowski</h2>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Wojciech Kruczkowski</h2>
+		<p class="title">Lider zespołu</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Aleksandra Lewandowska</h2>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Karolina Staryszak</h2>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+      <div class="" id="harmonogram">
+        <div class="w3-container w3-content w3-padding-64" style="max-width: 800px">
+          <h2 class="w3-wide w3-center w3-margin-bottom">
+            HARMONOGRAM SPOTKAŃ
+          </h2>
+
+          <ul class="w3-ul w3-border w3-white w3-text-grey w3-margin-bottom">
+            <li>
+              <strong class="w3-small">28.04.2023</strong>
+              <p>
+                Omówienie zasad przedmiotu i współpracy z opiekunem.
+              </p>
+            </li>
+            <li>
+              <strong class="w3-small">05.05.2023, 19.05.2023</strong>
+              <p>
+                Wybór tematu projektu, ustalenie funkcjonalności jakie ma oferować tworzona aplikacja.
+              </p>
+            </li>
+            <li>
+              <strong class="w3-small">26.05.2023</strong>
+              <p>
+                Wstępne podzielenie pracy na etapy.	
+              </p>
+            </li>
+            <li>
+              <strong class="w3-small">23.06.2023</strong>
+              <p>
+                Omówienie metod zarządzania projektami. Wybór najodpowiedniejszego 
+				oprogramowania do zarządzania projektem w zespole i zapoznanie z jego obsługą.  		
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	
+	<div class="" id="link">
+        <div class="w3-container w3-content w3-padding-64" style="max-width: 800px">
+          <h2 class="w3-wide w3-center w3-margin-bottom">
+            LINK DO REPOZYTORIUM
+          </h2>
+		  <div class="w3-wide w3-center w3-margin-bottom">
+		   <a href="https://github.com/Griperr/ProjectYTBot"><i class="fa fa-github" style="font-size:48px"></i></a>
+		   </div>
+		  </div>
+		  </div>
+
+
+    <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleMenu() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  
+
+</body></html>
